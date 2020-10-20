@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="smart.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="footerr.css">
+    <style>
+      .item1 {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size:cover;
+      }
+      .item2
+      {
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+ 
+    </style>
+</head>
+<body>
+  
+<nav class="navbar fixed-top navbar-expand-lg navbar-blue scrolls">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" style="margin-right: 10px;font-size: 20px;"><b>Smart City</b></a>
+      </li>
+ 
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Temples</b>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Hotels</b></a>
+         <div class="sub-1">
+         	<ul>
+         		<i><a href="#">MAYFAIR Lagoon</a></i><br>
+         		<i><a href="#">Hotel Pushpak</a></i><br>
+         		<i><a href="#">Ginger Bhubaneshwar</a></i><br>
+         		<i><a href="#">Swosti Premium Hotel</a></i><br>
+         		<i><a href="#">Fortune Park Sishmo</a></i><br>
+         		<i><a href="#">Pal Heights</a></i><br>
+         		<i><a href="#">Others</a></i>
+         
+         	</ul>
+         	
+         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Resturent</b></a>
+         <div class="sub-1">
+         	<ul>
+         		<i><a href="#">AB's-Absolute Barbecues</a></i><br>
+         		<i><a href="#">Chili's Grill & Bar</a></i><br>
+         		<i><a href="#">Moody Blues</a></i><br>
+         		<i><a href="#">Brick & Clay</a></i><br>
+         		<i><a href="#">Biggies Burger</a></i><br>
+         		<i><a href="#">Others</a></i>
+         
+         	</ul>
+         	
+         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Hospitals</b></a>
+         <div class="sub-1">
+         	<ul>
+         		<i><a href="#">Sparsh Hospitalv</a></i><br>
+         		<i><a href="#">Apollo Hospitals</a></i><br>
+         		<i><a href="#">Aditya Care Hospital</a></i><br>
+         		<i><a href="#">Janani Hospital</a></i><br>
+         		<i><a href="#">MAA Shakti Hospital</a></i><br>
+         		<i><a href="#">Vivekanand Hospital</a></i><br>
+         		<i><a href="#">Others</a></i>
+         	
+         	</ul>
+         	
+         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Institute</b></a>
+         <div class="sub-1">
+         	<ul>
+         		<i><a href="#">Utkal University</a></i><br>
+         		<i><a href="#">International Institute of Information Technology</a></i><br>
+         		<i><a href="#">Rama Devi Women's University</a></i><br>
+                 <i><a href="#">Birla Global University, Bhubaneswar</a></i><br>
+         		<i><a href="#">Kalinga Institute of Dental Sciences</a></i><br>
+         		<i><a href="#">Deba Ray College</a></i><br>
+         		<i><a href="#">Others</a></i>
+         
+         	</ul>
+         	
+         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Places</b></a>
+         <div class="sub-1">
+         	<ul>
+         		<i><a href="#">Forum Mart</a></i><br>
+         		<i><a href="#">Galaxy Mall</a></i><br>
+         		<i><a href="#">The World Mall</a></i><br>
+         		<i><a href="#">Maruti Mall</a></i><br>
+         		<i><a href="#">OSRTC Mall  </a></i><br>
+         		<i><a href="#">Symphony Mall </a></i><br>
+         		<i><a href="#">D.N. Regalia Mall</a></i><br>
+         		<i><a href="#">Esplanade 1</a></i><br>
+         		<i><a href="#">Others</a></i>
+         	
+         	</ul>
+         	
+         </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: white; color: blue;"><b>Go!</b></button>
+      <button onclick="document.getElementById('id01').style.display='block'"  class="btn btn-outline-success my-2 my-sm-0" type="submit" id="button1" style="background-color: white; color: blue;margin-left: 5px">Registration</button>
+      <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="default-profile-picture1-744x744.jpg" alt="Avatar" class="avatar">
+    </div>
+     <div class="container" style="background-color: white;">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div class="container" style="background-color:#f1f1f1 ; padding-top: 10px;" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+      <button onclick="document.getElementById('id01').style.display='block'"  class="btn btn-outline-success my-2 my-sm-0" type="submit" id="button1" style="background-color: white; color: blue;margin-left: 5px">Login</button>
+      <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="default-profile-picture1-744x744.jpg" alt="Avatar" class="avatar">
+    </div>
+     <div class="container" style="background-color: white;">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div class="container" style="background-color:#f1f1f1 ; padding-top: 10px;" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+</nav>
+
+    <section id="nav2" >
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item item1 active" style="background-image: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/fall-1072821_1280.jpg);">
+              </div>
+              <div class="carousel-item item1" style="background-image: url(https://cdn.pixabay.com/photo/2013/04/03/12/05/tree-99852_1280.jpg);" >
+              </div>
+              <div class="carousel-item item1" style="background-image: url(https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228__480.jpg);">
+              </div> 
+            </div>
+          </div>
+    </section>
+    
+  
+    <div class="container w-100">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class=" display-4 text-dark mb-0">
+            <strong>Our Services</strong>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 text-center my-5 ">
+            <h3 class="text-uppercase my-2 ">Special Activites</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+    
+        </div>
+        <div class="col-md-3 text-center my-5">
+           <h3 class="text-uppercase my-2 display">Travel Arrangement</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+     
+       </div>
+       <div class="col-md-3 text-center my-5">
+           <h3 class="text-uppercase my-2 display">Private Guide</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+           
+       </div>
+       <div class="col-md-3  text-center my-5">
+           <h3 class="text-uppercase my-2 display">Location Manager</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+           
+       </div>
+      </div>
+      </div>
+     
+      
+    <div class="container-fulid w-100">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class=" display-4 text-dark mb-0">
+            <strong>Most Popular Destination</strong>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 text-center my-5 ">
+            <h3 class="text-uppercase my-2 ">Special Activites</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+    
+        </div>
+        <div class="col-md-3 text-center my-5">
+           <h3 class="text-uppercase my-2 display">Travel Arrangement</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+     
+       </div>
+       <div class="col-md-3 text-center my-5">
+           <h3 class="text-uppercase my-2 display">Private Guide</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+           
+       </div>
+       <div class="col-md-3  text-center my-5">
+           <h3 class="text-uppercase my-2 display">Location Manager</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+           
+       </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-center my-5 ">
+            <h3 class="text-uppercase my-2 ">Special Activites</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+    
+        </div>
+        <div class="col-md-3 text-center my-5">
+           <h3 class="text-uppercase my-2 display">Travel Arrangement</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+     
+       </div>
+       <div class="col-md-3 text-center my-5">
+           <h3 class="text-uppercase my-2 display">Private Guide</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+           
+       </div>
+       <div class="col-md-3  text-center my-5">
+           <h3 class="text-uppercase my-2 display">Location Manager</h3>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus voluptas ea facere, vero quibusdam quis aliquid dicta odit eaque.</p>
+           
+       </div>
+      </div>
+      </div>
+     
+      
+
+      
+    <div class="container w-100 mb-5">
+      <div class="row">
+        <div class="col text-center mb-4">
+          <h1 class=" display-4 text-dark mb-0">
+            <strong>Our Blogs</strong>
+          </h1>
+        </div>
+      </div>
+
+     
+        <div class="main-carousel" data-flickity='{"groupCells": true }'>
+          <div class="carousel-cell">
+           <img class="cell" src="../smart/Apollo.jpg" alt="">
+          </div>
+          <div class="carousel-cell">
+            <img class="cell" src="../smart/dhauli.jpg" alt="">
+           </div>
+           <div class="carousel-cell">
+             <img class="cell" src="../smart/empire.png" alt="">
+            </div>
+            <div class="carousel-cell">
+              <img class="cell" src="../smart/AIIMS-Bhubaneswar.jpg" alt="">
+             </div>
+             <div class="carousel-cell">
+               <img class="cell" src="../smart/default-profile-picture1-744x744.jpg" alt="">
+              </div>
+              <div class="carousel-cell">
+                <img class="cell" src="../Bootstrap project/Bootstrap project/img/pexels3.jpeg" alt="">
+               </div>
+               <div class="carousel-cell">
+                 <img  class="cell" src="../Bootstrap project/Bootstrap project/img/pexels4.jpeg" alt="">
+                </div>
+                <div class="carousel-cell">
+                  <img class="cell" src="../Bootstrap project/Bootstrap project/img/pexels5.jpeg" alt="">
+                 </div>
+          </div>
+    </div>
+    
+<footer>
+	<div class="Footer-wrapper">
+		<div class="Footer-header">
+			<div class="Footer2">
+				<ul>
+					<li><b>Follow us</b></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div><hr>
+		<div class="container-fluid">
+		  <div class="row rowss">
+		    <div class="col-sm">
+		      <b>Contact Us</b>
+		      <div class="footer-content1">
+		      	    <a href="#"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Near Vision Care</a><br>
+                  	<a href="#"><i class="fa fa-phone"></i>&nbsp;+918092577239</a><br>
+                  	<a href="#"><i class="fa fa-fax"></i>&nbsp;+918092577239</a><br>
+                  	<a href="#"><i class="fa fa-envelope"></i>&nbsp;info@smart_city_bbs.com</a><br>
+                  	<a href="#"><i class="fa fa-globe"></i>&nbsp;www.smartcitybbs.com</a><br>
+		      </div>
+		    </div>
+		    <div class="col-sm">
+		      <b>Quick Link</b>
+		      <div class="footer-content1">
+		      	<a href="#">Home</a><br>
+		      	<a href="#">About Us</a><br>
+		      	<a href="#">Hotels</a><br>
+		      	<a href="#">Resturent</a><br>
+		      	<a href="#">Hospitals</a><br>
+		      	<a href="#">Malls</a><br>
+		      </div>
+		    </div>
+		    <div class="col-sm">
+		      <b>Our Services</b>
+		      <div class="footer-content1">
+		      	<a href="#">Travle & Tourism</a><br>
+		      	<a href="#">Ancient Places</a><br>
+		      	<a href="#">City Infrastrcutre</a><br>
+		      	<a href="#">Hotels</a><br>
+		      	<a href="#">BNC (Bhubneswar Municipal Corporation)</a>		    
+		      </div>
+		    </div>
+		    <div class="col-sm">
+		      <b>Help</b>
+		       <div class="footer-content1">
+		      	<a href="#">Help Center</a><br>
+		      	<a href="#">FAQ's</a><br>
+		      	<a href="#">Tweet For Support</a><br>		    
+		      </div>
+		    </div>
+		  </div>
+		</div><hr>
+		<div class="container-fluid">
+			<div class="row rowss">
+			    <div class="col-sm footer-content2">
+			      <a href="#">Privacy</a>
+			    </div>
+			    <div class="col-sm footer-content2">
+			      <a href="#">Terms & Condition</a>
+			    </div>
+			    <div class="col-sm footer-content2">
+			      <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a href="#">Help</a>
+			    </div>
+			    <div class="col-sm">
+			      <div class="btn-group dropup">
+					  
+					  <div class="dropdown-menu">
+					    <!-- Dropdown menu links -->
+					  </div>
+				  </div>
+			    </div>
+			    
+            </div>
+			
+		</div>
+		<div class="last"><p>Copyright &copy; 2007 Smart_city! Designed by <a href="#">Neeraj & Nishant</a></p></div>
+	</div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+<script>
+  $(window).scroll(function(){
+    $('navbar').toggleClass('scrolled',$(this).scrollTop() > 500);
+    });
+</script>
+
+</body>
+</html>

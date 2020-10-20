@@ -1,0 +1,60 @@
+
+body{
+    font-family: 'Amatic SC', cursive;
+
+}
+#navbarNavAltMarkup
+{
+    font-size: 25px;    
+}
+.navbar-brand
+{
+    font-size: 35px;
+}
+.height{
+    min-height: 100vh;
+}
+.title-underline{
+    width:100px;
+    height:5px;
+    margin: 0 auto;
+}
+.height-80{
+    min-height: 80vh;
+}
+.about-picture{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)), url(../img/kitchen.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#filler{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/pexels5.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gotopbtn
+{
+    position: fixed;
+    font-size: 30px;
+    border-radius: 100%;
+    border-color:black;
+    background-color: white;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+}
+.scrolled{
+    background-color: blueviolet;
+}
+header .container .row .col h1
+{   background-color: cornflowerblue;
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: left;
+    transform :scaleX(1);
+}
